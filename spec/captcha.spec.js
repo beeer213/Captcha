@@ -14,3 +14,42 @@ function opera(o){
     }
   }
 }
+function left(p,l){
+    this.toString = function(){
+      if(p===1){
+          return l;
+      }
+      if(p===2){
+        if(l===0){
+          return 'Zero';
+        }
+        if(l===1){
+          return 'One';
+        }
+        if(l==='2'){
+          return 'Two';
+        }
+        if(l==='3'){
+          return 'Three';
+        }
+        if(l==='4'){
+          return 'Four';
+        }
+        if(l==='5'){
+          return 'Five';
+        }
+        if(l==='6'){
+          return 'Six';
+        }
+        if(l==='7'){
+          return 'Seven';
+        }
+        if(l==='8'){
+          return 'Eight';
+        }
+        if(l==='9'){
+          return 'Nine';
+        }
+      }
+    }
+}
