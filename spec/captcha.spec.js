@@ -1,3 +1,11 @@
+function Captcha(pattern, operator, leftOperand, rightOperand){
+    this.generate = function() {
+        let op = new opera(operator);
+        let le = new left(pattern,leftOperand);
+        let ri = new right(pattern,rightOperand);
+        return le+' '+op+' '+ri;
+    }
+  }
 function opera(o){
   this.toString = function(){
     if(o===1){
