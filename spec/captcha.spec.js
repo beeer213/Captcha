@@ -14,10 +14,10 @@ function opera(o){
     else if(o===2){
       return '-';
     }
-    if(o==='3'){
+    if(o===3){
       return '*';
     }
-    if(o==='4'){
+    if(o===4){
       return '/';
     }
   }
@@ -34,28 +34,28 @@ function left(p,l){
         if(l===1){
           return 'One';
         }
-        if(l==='2'){
+        if(l===2){
           return 'Two';
         }
-        if(l==='3'){
+        if(l===3){
           return 'Three';
         }
-        if(l==='4'){
+        if(l===4){
           return 'Four';
         }
-        if(l==='5'){
+        if(l===5){
           return 'Five';
         }
-        if(l==='6'){
+        if(l===6){
           return 'Six';
         }
-        if(l==='7'){
+        if(l===7){
           return 'Seven';
         }
-        if(l==='8'){
+        if(l===8){
           return 'Eight';
         }
-        if(l==='9'){
+        if(l===9){
           return 'Nine';
         }
       }
@@ -64,34 +64,34 @@ function left(p,l){
 function right(p,r){
     this.toString = function(){
       if(p===1){
-        if(r==='0'){
+        if(r===0){
           return 'Zero';
         }
-        if(r==='1'){
+        if(r===1){
           return 'One';
         }
-        if(r==='2'){
+        if(r===2){
           return 'Two';
         }
-        if(r==='3'){
+        if(r===3){
           return 'Three';
         }
-        if(r==='4'){
+        if(r===4){
           return 'Four';
         }
-        if(r==='5'){
+        if(r===5){
           return 'Five';
         }
-        if(r==='6'){
+        if(r===6){
           return 'Six';
         }
-        if(r==='7'){
+        if(r===7){
           return 'Seven';
         }
-        if(r==='8'){
+        if(r===8){
           return 'Eight';
         }
-        if(r==='9'){
+        if(r===9){
           return 'Nine';
         }
       }
@@ -106,6 +106,10 @@ describe('Captcha App', function() {
     it('should return "5 + Six" when input is 1,1,5,6', function(){
        let app = new Captcha(pattern,1,5,6);
        expect(app.generate()).toEqual('5 + Six');
+    })
+    it('should return "2 - Five" when input is 1,2,2,5', function(){
+       let app = new Captcha(pattern,2,2,5);
+       expect(app.generate()).toEqual('2 - Five');
     })
   })
   describe('Pattern is 2', function() {
