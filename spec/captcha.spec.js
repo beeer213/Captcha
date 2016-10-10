@@ -126,5 +126,9 @@ describe('Captcha App', function() {
        let app = new Captcha(pattern,2,5,2);
        expect(app.generate()).toEqual('Five - 2');
     })
+    it('should return "Two * 7" when input is 1,3,2,7', function(){
+       let app = new Captcha(pattern,3,2,7);
+       expect(app.generate()).toEqual('Two * 7');
+    })
   })
 })
