@@ -100,3 +100,12 @@ function right(p,r){
       }
     }
 }
+describe('Captcha App', function() {
+  describe('Pattern is 1', function() {
+    let pattern = 1;
+    it('should return "5 + Six" when input is 1,1,5,6', function(){
+       let app = new Captcha(pattern,1,5,6);
+       expect(app.generate()).toEqual('5 + Six');
+    })
+  })
+})
