@@ -53,3 +53,42 @@ function left(p,l){
       }
     }
 }
+function right(p,r){
+    this.toString = function(){
+      if(p===1){
+        if(r==='0'){
+          return 'Zero';
+        }
+        if(r==='1'){
+          return 'One';
+        }
+        if(r==='2'){
+          return 'Two';
+        }
+        if(r==='3'){
+          return 'Three';
+        }
+        if(r==='4'){
+          return 'Four';
+        }
+        if(r==='5'){
+          return 'Five';
+        }
+        if(r==='6'){
+          return 'Six';
+        }
+        if(r==='7'){
+          return 'Seven';
+        }
+        if(r==='8'){
+          return 'Eight';
+        }
+        if(r==='9'){
+          return 'Nine';
+        }
+      }
+      if(p===2){
+          return r;
+      }
+    }
+}
