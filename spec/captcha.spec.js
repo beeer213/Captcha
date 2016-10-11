@@ -127,6 +127,10 @@ describe('Captcha App', function() {
        let app = new Captcha(pattern,2,4,9);
        expect(app.generate()).toEqual('4 - Nine');
     })
+    it('should return "3 * Eight" when input is 1,3,3,8', function(){
+       let app = new Captcha(pattern,3,3,8);
+       expect(app.generate()).toEqual('3 * Eight');
+    })
   })
   describe('Pattern is 2', function() {
     let pattern = 2;
