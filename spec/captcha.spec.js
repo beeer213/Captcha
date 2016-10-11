@@ -121,7 +121,11 @@ describe('Captcha App', function() {
     })
     it('should return "6 + One" when input is 1,1,6,1', function(){
        let app = new Captcha(pattern,1,6,1);
-       expect(app.generate()).toEqual('6 + One'); //คอมมิทผิดครับ
+       expect(app.generate()).toEqual('6 + One');
+    })
+    it('should return "4 - Nine" when input is 1,2,4,9', function(){
+       let app = new Captcha(pattern,2,4,9);
+       expect(app.generate()).toEqual('4 - Nine');
     })
   })
   describe('Pattern is 2', function() {
