@@ -150,5 +150,9 @@ describe('Captcha App', function() {
        let app = new Captcha(pattern,3,2,7);
        expect(app.generate()).toEqual('Two * 7');
     })
+    it('should return "Three / 9" when input is 2,4,3,9', function(){
+       let app = new Captcha(pattern,4,3,9);
+       expect(app.generate()).toEqual('Three / 9');
+    })
   })
 })
