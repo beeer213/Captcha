@@ -139,7 +139,10 @@ describe('Captcha App', function() {
        let app = new Captcha(pattern,1,1,9);
        expect(app.generate()).toEqual('1 + Nine');
     })
-
+    it('should return "5 - Five" when input is 1,2,5,5', function(){
+       let app = new Captcha(pattern,2,5,5);
+       expect(app.generate()).toEqual('5 - Five');
+    })
   })
   describe('Pattern is 2', function() {
     let pattern = 2;
